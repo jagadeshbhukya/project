@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "setup": "npm install && echo 'Frontend dependencies installed!'",
+    "start:backend": "python run_backend.py",
+    "start:db": "docker-compose up -d",
+    "stop:db": "docker-compose down",
+    "reset:db": "docker-compose down -v && docker-compose up -d"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
